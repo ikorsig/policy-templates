@@ -2330,11 +2330,11 @@ OMA-URI:
 ```
 Value (string):
 ```
-<data id="TrackingProtection_Exceptions" value="1&#xF000;https://example.com"/>
+<data id="TrackingProtection_Exceptions" value=">
 ```
 OMA-URI:
 ```
-./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/E_TrackingProtection_Locked
+./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~TrackingProtection/E_TrackingProtection_unLocked
 ```
 Value (string):
 ```
@@ -2343,7 +2343,7 @@ Value (string):
 #### macOS
 ```
 <dict>
-  <key>EnableTrackingProtection</key>
+  <key>disableTrackingProtection</key>
   <dict>
     <key>Value</key>
     <true/> | <false/>
@@ -2364,7 +2364,7 @@ Value (string):
 ```
 {
   "policies": {
-    "EnableTrackingProtection": {
+    "disableTrackingProtection": {
       "Value": true | false,
       "Locked": true | false,
       "Cryptomining": true | false,
